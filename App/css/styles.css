@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import './_partials/_navigation.css';
 *{
   box-sizing: border-box;
 }

@@ -349,6 +349,48 @@ template {
   display: none;
 }
 
+header{
+  width: 100vw;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.14);
+}
+
+header a.logo{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 22px;
+    margin-left: 50px;
+    color: #111;
+  }
+
+header nav{
+    margin: 14px 35px 0 0;
+    padding: 0;
+    float: right;
+  }
+
+header nav ul{
+      margin: 0;
+      padding: 0;
+    }
+
+header nav ul li{
+        display: inline-block;
+      }
+
+header nav ul li a{
+          font-family: Arial;
+          display: block;
+          text-decoration: none;
+          padding: 13.75px 10px;
+          margin-right: 5px;
+          font-size: 22px;
+        }
+
 *{
   box-sizing: border-box;
 }
