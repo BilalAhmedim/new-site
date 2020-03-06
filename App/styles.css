@@ -391,7 +391,20 @@ header nav ul li a{
           font-size: 22px;
         }
 
+.hero{
+  width: 100vw;
+  height: 700px;
+  position: relative;
+  background: url('./../bg.jpg') no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 *{
   box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,9 @@
 @import 'normalize.css';
 @import './_partials/_navigation.css';
+@import './_partials/_hero.css';
 *{
   box-sizing: border-box;
+}
+body{
+  overflow: hidden;
 }
