@@ -3,6 +3,7 @@ header{
   height: 80px;
   position: fixed;
   transition: 150ms ease all;
+  background: linear-gradient(to right, #fff -20%, transparent);
   a.logo{
     width: 66px;
     height: 57px;
@@ -31,6 +32,7 @@ header{
           margin-right: 5px;
           font-size: 20px;
           transition: 150ms ease all;
+          color: #fff;
         }
       }
     }
@@ -48,6 +50,7 @@ header{
       margin-top: 5px;
       a{
         font-size: 18px;
+        color: #0000EE;
       }
     }
   }
