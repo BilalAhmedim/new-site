@@ -1,0 +1,29 @@
+.row{
+  .col{
+    float: left;
+    height: 50px;
+    background: red;
+    &-12{
+      width: 100%;
+      background: blue;
+    }
+    &-6{
+      width: 50%;
+      background: green;
+    }
+    &-3{
+      width: 25%;
+      background: gray;
+    }
+    &-2{
+      width: 16.66%;
+      background: orange;
+    }
+  }
+  overflow: auto;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

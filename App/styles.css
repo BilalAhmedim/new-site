@@ -349,6 +349,42 @@ template {
   display: none;
 }
 
+.row{
+  overflow: auto;
+}
+
+.row .col{
+    float: left;
+    height: 50px;
+    background: red;
+  }
+
+.row .col-12{
+      width: 100%;
+      background: blue;
+    }
+
+.row .col-6{
+      width: 50%;
+      background: green;
+    }
+
+.row .col-3{
+      width: 25%;
+      background: gray;
+    }
+
+.row .col-2{
+      width: 16.66%;
+      background: orange;
+    }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 *{
   box-sizing: border-box;
 }
