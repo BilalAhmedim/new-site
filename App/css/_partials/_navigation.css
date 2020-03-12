@@ -4,6 +4,7 @@ header{
   position: fixed;
   transition: 150ms ease all;
   background: linear-gradient(to right, #fff -20%, transparent);
+  z-index: 99999;
   a.logo{
     width: 66px;
     height: 57px;
