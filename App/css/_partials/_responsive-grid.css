@@ -1,5 +1,5 @@
 .row{
-  padding: 10px 0;
+  padding: 0;
   .col{
     float: left;
     &-12{
@@ -15,10 +15,5 @@
       width: 16.66%;
     }
   }
-  overflow: auto;
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  @mixin clearfix;
 }
