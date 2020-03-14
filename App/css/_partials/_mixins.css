@@ -1,44 +1,44 @@
 /* Break Points */
 
 @define-mixin at-sm-mobile{
-  @media screen(min-width: $sm-mobile) {
-    @mixin-content
+  @media (min-width: $sm-mobile) {
+    @mixin-content;
   }
 }
 
 @define-mixin at-md-mobile{
-  @media screen(min-width: $md-mobile) {
-    @mixin-content
+  @media (min-width: $md-mobile) {
+    @mixin-content;
   }
 }
 
 @define-mixin at-lg-mobile{
-  @media screen(min-width: $lg-mobile) {
-    @mixin-content
+  @media (min-width: $lg-mobile) {
+    @mixin-content;
   }
 }
 
 @define-mixin at-tablet{
-  @media screen(min-width: $tablet) {
-    @mixin-content
+  @media (min-width: $tablet) {
+    @mixin-content;
   }
 }
 
 @define-mixin at-sm-desktop{
-  @media screen(min-width: $sm-desktop) {
-    @mixin-content
+  @media (min-width: $sm-desktop) {
+    @mixin-content;
   }
 }
 
 @define-mixin at-md-desktop{
-  @media screen(min-width: $md-desktop) {
-    @mixin-content
+  @media (min-width: $md-desktop) {
+    @mixin-content;
   }
 }
 
 @define-mixin at-lg-desktop{
-  @media screen(min-width: $lg-desktop) {
-    @mixin-content
+  @media (min-width: $lg-desktop) {
+    @mixin-content;
   }
 }
 

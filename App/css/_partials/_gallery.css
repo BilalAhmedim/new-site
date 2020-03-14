@@ -1,10 +1,18 @@
 .gallery{
   &__container{
     margin: 0 auto;
-    padding: 30px 120px;
+    padding: 60px 50px;
+    @mixin at-lg-mobile{
+      padding: 15px 60px;
+    }
     .gallery__card{
-      float: left;
-      margin: 0 25px 25px 0;
+      margin: 15px;
+      @mixin at-lg-mobile{
+        margin: 10px;
+      }
+      @mixin at-tablet{
+        margin: 0 25px 25px 0;
+      }
       border-radius: 4px;
       box-shadow: 0px 5px 6px 1px rgba(0,0,0,.14);
       transition: 100ms box-shadow,100ms transform;
