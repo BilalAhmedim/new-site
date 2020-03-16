@@ -1,14 +1,14 @@
 .gallery{
   &__container{
     margin: 0 auto;
-    padding: 60px 50px;
+    padding: 30px 50px;
     @mixin at-lg-mobile{
       padding: 15px 60px;
     }
     .gallery__card{
-      margin: 15px;
+      margin: 10px;
       @mixin at-lg-mobile{
-        margin: 10px;
+        margin: 15px;
       }
       @mixin at-tablet{
         margin: 0 25px 25px 0;
@@ -23,7 +23,7 @@
       }
      &__inner{
        width: 100%;
-       border-radius: 4px 4px 0 0;
+       border-radius: 0;
        cursor: pointer;
      }
      &__caption{

@@ -10,8 +10,8 @@
     }
     &-3{
       width: 100%;
-      @mixin at-lg-mobile{
-        width: 50%;
+      @mixin at-md-mobile{
+        width: 50%
       }
       @mixin at-tablet{
         width: 25%;
