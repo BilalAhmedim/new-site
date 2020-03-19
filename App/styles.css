@@ -456,6 +456,37 @@ header a.logo{
     transition: 150ms ease all;
   }
 
+header .toggle{
+    position: relative;
+    width: 42px;
+    height: 42px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 19px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+header .toggle__bar{
+      position: absolute;
+      width: calc(100% - 10px);
+      height: 2px;
+      background: #000;
+      border-radius: 2px;
+    }
+
+header .toggle__bar--top{
+        top: 10px;
+      }
+
+header .toggle__bar--middle{
+        top: 20px;
+      }
+
+header .toggle__bar--bottom{
+        bottom: 10px;
+      }
+
 header nav{
     margin: 14px 35px 0 0;
     padding: 0;
@@ -502,6 +533,264 @@ header.sticky nav a{
         font-size: 18px;
         color: #0000EE;
       }
+
+/* toggle button styleing and animation */
+
+.toggle__bar__animate-top{
+      -webkit-animation: top 300ms linear forwards;
+              animation: top 300ms linear forwards;
+      transform-origin: 50% 0;
+    }
+
+.toggle__bar__animate-middle{
+      -webkit-animation: middle 300ms linear forwards;
+              animation: middle 300ms linear forwards;
+      transform-origin: 50% 0;
+    }
+
+.toggle__bar__animate-bottom{
+      -webkit-animation: bottom 300ms linear forwards;
+              animation: bottom 300ms linear forwards;
+      transform-origin: 50% 0;
+    }
+
+.toggle__bar__animate--reverse-top{
+        -webkit-animation: r-top 300ms linear forwards;
+                animation: r-top 300ms linear forwards;
+        transform-origin: 50% 0;
+      }
+
+.toggle__bar__animate--reverse-middle{
+        -webkit-animation: r-middle 300ms linear forwards;
+                animation: r-middle 300ms linear forwards;
+        transform-origin: 50% 0;
+      }
+
+.toggle__bar__animate--reverse-bottom{
+        -webkit-animation: r-bottom 300ms linear forwards;
+                animation: r-bottom 300ms linear forwards;
+        transform-origin: 50% 0;
+      }
+
+@-webkit-keyframes top{
+    0%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    33.33%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      top: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      top: 20px;
+      margin-left: 1.5px;
+      transform: rotate(45deg) scalex(1.25);
+    }
+  }
+
+@keyframes top{
+    0%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    33.33%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      top: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      top: 20px;
+      margin-left: 1.5px;
+      transform: rotate(45deg) scalex(1.25);
+    }
+  }
+
+@-webkit-keyframes bottom{
+    0%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    33.33%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      bottom: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      bottom: 20px;
+      margin-right: 1.5px;
+      transform: rotate(-45deg) scalex(1.25);
+    }
+  }
+
+@keyframes bottom{
+    0%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    33.33%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      bottom: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      bottom: 20px;
+      margin-right: 1.5px;
+      transform: rotate(-45deg) scalex(1.25);
+    }
+  }
+
+@-webkit-keyframes middle{
+    0%{
+      transform: scalex(1);
+    }
+    33.33%{
+      transform: scalex(1);
+    }
+    66.66%{
+      transform: scalex(1);
+    }
+    100%{
+      transform: scalex(0);
+    }
+  }
+
+@keyframes middle{
+    0%{
+      transform: scalex(1);
+    }
+    33.33%{
+      transform: scalex(1);
+    }
+    66.66%{
+      transform: scalex(1);
+    }
+    100%{
+      transform: scalex(0);
+    }
+  }
+
+@-webkit-keyframes r-top{
+    0%{
+      top: 20px;
+      margin-left: 1.5px;
+      transform: rotate(45deg) scalex(1.25);
+    }
+    33.33%{
+      top: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+  }
+
+@keyframes r-top{
+    0%{
+      top: 20px;
+      margin-left: 1.5px;
+      transform: rotate(45deg) scalex(1.25);
+    }
+    33.33%{
+      top: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      top: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+  }
+
+@-webkit-keyframes r-bottom{
+    0%{
+      bottom: 20px;
+      margin-right: 1.5px;
+      transform: rotate(-45deg) scalex(1.25);
+    }
+    33.33%{
+      bottom: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+  }
+
+@keyframes r-bottom{
+    0%{
+      bottom: 20px;
+      margin-right: 1.5px;
+      transform: rotate(-45deg) scalex(1.25);
+    }
+    33.33%{
+      bottom: 20px;
+      transform: rotate(0deg) scalex(1);
+    }
+    66.66%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+    100%{
+      bottom: 10px;
+      transform: rotate(0deg) scalex(1);
+    }
+  }
+
+@-webkit-keyframes r-middle{
+    0%{
+      transform: scalex(0);
+    }
+    33.33%{
+      transform: scalex(1);
+    }
+    66.66%{
+      transform: scalex(1);
+    }
+    100%{
+      transform: scalex(1);
+    }
+  }
+
+@keyframes r-middle{
+    0%{
+      transform: scalex(0);
+    }
+    33.33%{
+      transform: scalex(1);
+    }
+    66.66%{
+      transform: scalex(1);
+    }
+    100%{
+      transform: scalex(1);
+    }
+  }
 
 .hero{
   width: 100%;
