@@ -2,7 +2,7 @@ header{
   width: 100%;
   height: 80px;
   position: fixed;
-  transition: 150ms ease all;
+  transition: 150ms ease height, 150ms ease box-shadow, 300ms ease background;
   background: linear-gradient(to right, #fff -20%, transparent);
   z-index: 99999;
   a.logo{
@@ -25,6 +25,9 @@ header{
     margin-top: 19px;
     padding: 5px;
     cursor: pointer;
+    @mixin at-lg-mobile{
+      display: none;
+    }
     &__bar{
       position: absolute;
       width: calc(100% - 10px);
@@ -43,14 +46,27 @@ header{
     }
   }
   nav{
-    margin: 14px 35px 0 0;
+    width: 100%;
+    margin: 11.5px 35px 0 0;
     padding: 0;
-    float: right;
+    background: #fff;
+    max-height: 0px;
+    overflow: hidden;
+    @mixin at-lg-mobile{
+      margin-top: 14px;
+      width: auto;
+      float: right;
+      background: transparent;
+      max-height: 2000px;
+    }
     ul{
       margin: 0;
       padding: 0;
       li{
-        display: inline-block;
+        display: inline;
+        @mixin at-lg-mobile{
+          display: inline-block;
+        }
         a{
           font-family: Arial;
           display: block;

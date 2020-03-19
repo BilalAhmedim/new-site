@@ -19,7 +19,7 @@ const
     toggle_middle.classList.remove(reverse+'-middle');
     toggle_bottom.classList.remove(reverse+'-bottom');
     // add class for expand navigation
-    elementUl.classList.add('primary-nav--open');
+    // elementUl.classList.add('primary-nav--open');
   }
   const toggle__close = e=>{
     toggle_button.classList.remove('toggle__bar__animate');
@@ -31,7 +31,7 @@ const
     toggle_middle.classList.add(reverse+'-middle');
     toggle_bottom.classList.add(reverse+'-bottom');
     // remove class for collapse navigation
-    elementUl.classList.remove('primary-nav--open');
+    // elementUl.classList.remove('primary-nav--open');
   }
 
 const toggle__Nav = e => {
