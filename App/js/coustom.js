@@ -6,7 +6,8 @@ const
   reverse = 'toggle__bar__animate--reverse',
   animate = 'toggle__bar__animate',
   elementUl = document.querySelector('nav'),
-  header = document.querySelector('header')
+  header = document.querySelector('header'),
+  toggle_point = window.innerWidth;
   ;
 
   const toggle__open = e =>{
