@@ -5,7 +5,7 @@ const
   toggle_bottom = toggle_button.querySelector('.toggle__bar--bottom'),
   reverse = 'toggle__bar__animate--reverse',
   animate = 'toggle__bar__animate',
-  elementUl = document.querySelector('.primary-nav'),
+  elementUl = document.querySelector('nav'),
   header = document.querySelector('header')
   ;
 
@@ -19,7 +19,7 @@ const
     toggle_middle.classList.remove(reverse+'-middle');
     toggle_bottom.classList.remove(reverse+'-bottom');
     // add class for expand navigation
-    // elementUl.classList.add('primary-nav--open');
+    elementUl.classList.add('show');
   }
   const toggle__close = e=>{
     toggle_button.classList.remove('toggle__bar__animate');
@@ -31,7 +31,7 @@ const
     toggle_middle.classList.add(reverse+'-middle');
     toggle_bottom.classList.add(reverse+'-bottom');
     // remove class for collapse navigation
-    // elementUl.classList.remove('primary-nav--open');
+    elementUl.classList.remove('show');
   }
 
 const toggle__Nav = e => {

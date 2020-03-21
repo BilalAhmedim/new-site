@@ -501,7 +501,23 @@ header nav{
     background: #fff;
     max-height: 0px;
     overflow: hidden;
+    transform: scale(.9);
+    opacity: .4;
+    transition: 300ms ease transform, 300ms ease opacity;
   }
+
+header nav.show{
+      background: #fff;
+      color: #000;
+      max-height: 2000px;
+      overflow: visible;
+      transform: scale(1);
+      opacity: 1;
+    }
+
+header nav.show ul li a{
+        color: #000;
+      }
 
 @media (min-width: 768px) {
 

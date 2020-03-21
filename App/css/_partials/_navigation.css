@@ -52,6 +52,20 @@ header{
     background: #fff;
     max-height: 0px;
     overflow: hidden;
+    transform: scale(.9);
+    opacity: .4;
+    transition: 300ms ease transform, 300ms ease opacity;
+    &.show{
+      background: #fff;
+      color: #000;
+      max-height: 2000px;
+      overflow: visible;
+      transform: scale(1);
+      opacity: 1;
+      ul li a{
+        color: #000;
+      }
+    }
     @mixin at-lg-mobile{
       margin-top: 14px;
       width: auto;
